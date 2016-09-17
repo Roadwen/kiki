@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>清除浮动影响</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			width: 800px;
+			margin: 0 auto;
+			background: #000;
+		}
+
+		.container .left {
+			width: 600px;
+			height: 500px;
+			background: #8bceef;
+			float: left;
+		}
+
+		.container .right {
+			width: 180px;
+			height: 500px;
+			background: #8def8b;
+			float: right;
+		}
+
+		.footer {
+			width: 800px;
+			height: 100px;
+			margin: 0 auto;
+			background: #c48bef;
+			clear: both;
+			/*overflow: hidden;*/
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="left"></div>
+		<div class="right"></div>
+	</div>
+	<div class="footer"></div>
+</body>
+</html>

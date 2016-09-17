@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>混合布局</title>
+	<style>
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
+
+		.head {
+			height: 100px;
+			background-color: #76d3e2;
+		}
+
+		.head .title {
+			height: 100px;
+			width: 800px;
+			background-color: #93f388;
+			margin: 0 auto;
+		}
+		.main {
+			height: 450px;
+			width: 800px;
+			margin: 0 auto;
+		}
+
+		.main .left {
+			height: 450px;
+			width: 20%;
+			background-color: #ea7676;
+			float: left;
+		}
+
+		.main .right {
+			height: 450px;
+			width: 80%;
+			background-color: #4adcad;
+			float: right;
+		}
+
+		.main .right .sub_left {
+			height: 450px;
+			width: 70%;
+			background-color: #d28be4;
+			float: left;
+		}
+
+		.main .right .sub_right {
+			height: 450px;
+			width: 30%;
+			background: #a0cae8;
+			float: right;
+		}
+		.foot {
+			height: 100px;
+			width: 800px;
+			background-color: #4adcad;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="head">
+		<div class="title"></div>
+	</div>
+	<div class="main">
+		<div class="left"></div>
+		<div class="right">
+			<div class="sub_left"></div>
+			<div class="sub_right"></div>
+		</div>
+	</div>
+	<div class="foot"></div>
+</body>
+</html>
